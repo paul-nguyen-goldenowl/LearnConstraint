@@ -9,12 +9,17 @@ import UIKit
 
 class CollectionViewController: UIViewController {
     
+    private let collectionPadding: CGFloat = 16
+    private let columnPadding: CGFloat = 12
+    private let rowPadding: CGFloat = 16
+    
     lazy var layout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.minimumLineSpacing = 1
-        layout.minimumInteritemSpacing = 1
-        layout.itemSize = CGSize(width: view.frame.width/3 - 2, height: view.frame.width/3 - 2)
+        layout.minimumLineSpacing = rowPadding
+        layout.minimumInteritemSpacing = rowPadding
+        let size = view.frame.width / 2 - rowPadding - collectionPadding
+        layout.itemSize = CGSize(width: size, height: size)
         return layout
     }()
     
@@ -23,11 +28,12 @@ class CollectionViewController: UIViewController {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         setLayout()
     }
-    
     
     private func setLayout(){
         view.addSubview(collectionView)
@@ -36,18 +42,21 @@ class CollectionViewController: UIViewController {
         collectionView.delegate = self
 
         collectionView.register(CustomUICollectionViewCell.self, forCellWithReuseIdentifier: CustomUICollectionViewCell.identifier)
-        collectionView.backgroundColor = .lightGray
-        collectionView.frame = view.bounds   
+
+        collectionView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: collectionPadding).isActive = true
+        collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -collectionPadding).isActive = true
+        collectionView.backgroundColor = .gray
     }
     
 }
-
 
 extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomUICollectionViewCell.identifier, for: indexPath) as! CustomUICollectionViewCell
 
-        cell.bind(with: "house \(indexPath.row)")
+        cell.bind(with: (indexPath.row))
         return cell
     }
     
