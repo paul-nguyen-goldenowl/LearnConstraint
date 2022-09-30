@@ -37,9 +37,7 @@ class CollectionViewController: UIViewController {
 
         collectionView.register(CustomUICollectionViewCell.self, forCellWithReuseIdentifier: CustomUICollectionViewCell.identifier)
         collectionView.backgroundColor = .lightGray
-        collectionView.frame = view.bounds
-        collectionView.collectionViewLayout = layout
-        
+        collectionView.frame = view.bounds   
     }
     
 }

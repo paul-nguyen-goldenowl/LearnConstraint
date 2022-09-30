@@ -17,17 +17,14 @@ class CustomUICollectionViewCell: UICollectionViewCell {
         image.image = UIImage(systemName: "house")
         image.contentMode = .scaleAspectFit
         image.clipsToBounds = true
-        image.backgroundColor = .yellow
         return image
     }()
     
     lazy var myLabel : UILabel = {
         let lb = UILabel()
         lb.translatesAutoresizingMaskIntoConstraints = false
-        lb.text = "house"
         lb.textAlignment = .center
         lb.clipsToBounds = true
-        lb.backgroundColor = .green
         return lb
     }()
     
