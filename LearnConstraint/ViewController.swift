@@ -48,6 +48,7 @@ class ViewController: UIViewController {
         button.layer.borderColor = UIColor.black.cgColor
         return button
     }()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,10 +61,12 @@ class ViewController: UIViewController {
         view.addSubview(scrollView)
         scrollView.addSubview(btnConstraint)
         scrollView.addSubview(btnTable)
+        scrollView.addSubview(btnCollection)
         
         setConstraints()
         btnConstraint.addTarget(self, action: #selector(btnConstraint_clicked), for: .touchUpInside)
         btnTable.addTarget(self, action: #selector(btnTableLayout_clicked), for: .touchUpInside)
+        btnCollection.addTarget(self, action: #selector(btnCollection_clicked), for: .touchUpInside)
     }
     
     private func setConstraints(){
@@ -84,6 +87,12 @@ class ViewController: UIViewController {
         constraints.append(btnTable.leftAnchor.constraint(equalTo: btnConstraint.leftAnchor))
         constraints.append(btnTable.topAnchor.constraint(equalTo: btnConstraint.bottomAnchor, constant: 20))
 
+        constraints.append(btnCollection.heightAnchor.constraint(equalToConstant: 25))
+        constraints.append(btnCollection.trailingAnchor.constraint(equalTo: btnTable.trailingAnchor))
+        constraints.append(btnCollection.leftAnchor.constraint(equalTo: btnTable.leftAnchor))
+        constraints.append(btnCollection.topAnchor.constraint(equalTo: btnTable.bottomAnchor, constant: 20))
+
+        
         NSLayoutConstraint.activate(constraints)
     }
     
@@ -97,6 +106,13 @@ class ViewController: UIViewController {
     @objc private func btnTableLayout_clicked(){
         print("nav to table page")
         let vc = MyTableViewController()
+        let nav = UINavigationController(rootViewController: vc)
+        present(nav, animated: true)
+    }
+    
+    @objc private func btnCollection_clicked(){
+        print("nav to table page")
+        let vc = CollectionViewController()
         let nav = UINavigationController(rootViewController: vc)
         present(nav, animated: true)
     }

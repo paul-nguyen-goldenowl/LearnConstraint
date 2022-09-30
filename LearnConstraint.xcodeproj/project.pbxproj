@@ -19,6 +19,8 @@
 		088FC51D28E585CB00CD141B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC51C28E585CB00CD141B /* TableViewCell.swift */; };
 		088FC52028E586D300CD141B /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC51F28E586D300CD141B /* MyView.swift */; };
 		088FC52228E58EA600CD141B /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088FC52128E58EA600CD141B /* TestStoryboard.storyboard */; };
+		088FC52428E6A32200CD141B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC52328E6A32200CD141B /* CollectionViewController.swift */; };
+		088FC52728E6A8F000CD141B /* CustomUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC52628E6A8F000CD141B /* CustomUICollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		088FC51C28E585CB00CD141B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		088FC51F28E586D300CD141B /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		088FC52128E58EA600CD141B /* TestStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
+		088FC52328E6A32200CD141B /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		088FC52628E6A8F000CD141B /* CustomUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUICollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		084A798D28E541EA00846FB3 = {
 			isa = PBXGroup;
 			children = (
+				088FC52528E6A8C500CD141B /* collection_view */,
 				088FC52128E58EA600CD141B /* TestStoryboard.storyboard */,
 				088FC51E28E586AE00CD141B /* Table */,
 				088FC51828E564CB00CD141B /* CollectionStoryboard.storyboard */,
@@ -99,6 +104,15 @@
 				088FC51F28E586D300CD141B /* MyView.swift */,
 			);
 			path = Table;
+			sourceTree = "<group>";
+		};
+		088FC52528E6A8C500CD141B /* collection_view */ = {
+			isa = PBXGroup;
+			children = (
+				088FC52328E6A32200CD141B /* CollectionViewController.swift */,
+				088FC52628E6A8F000CD141B /* CustomUICollectionViewCell.swift */,
+			);
+			path = collection_view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,9 +189,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				088FC52028E586D300CD141B /* MyView.swift in Sources */,
+				088FC52728E6A8F000CD141B /* CustomUICollectionViewCell.swift in Sources */,
 				084A799E28E541EA00846FB3 /* ViewController.swift in Sources */,
 				088FC51B28E574EA00CD141B /* MyTableViewController.swift in Sources */,
 				088FC51528E5531600CD141B /* ConstraintViewController.swift in Sources */,
+				088FC52428E6A32200CD141B /* CollectionViewController.swift in Sources */,
 				088FC51D28E585CB00CD141B /* TableViewCell.swift in Sources */,
 				084A799A28E541EA00846FB3 /* AppDelegate.swift in Sources */,
 				084A799C28E541EA00846FB3 /* SceneDelegate.swift in Sources */,

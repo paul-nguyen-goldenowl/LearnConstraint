@@ -6,4 +6,5 @@
 ## UITableView
 <img src="Docs/screenshots/tableview.png" width="200"/>
 
-## CollectionView
+## UICollectionView
+<img src="Docs/screenshots/collectionview.png" width="200"/>
