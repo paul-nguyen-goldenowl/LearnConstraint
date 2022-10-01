@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0807BB6528E84674004F0AF1 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807BB6428E84674004F0AF1 /* Helper.swift */; };
+		0807BB6828E84C49004F0AF1 /* MyStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0807BB6728E84C49004F0AF1 /* MyStackViewController.swift */; };
 		084A799A28E541EA00846FB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084A799928E541EA00846FB3 /* AppDelegate.swift */; };
 		084A799C28E541EA00846FB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084A799B28E541EA00846FB3 /* SceneDelegate.swift */; };
 		084A799E28E541EA00846FB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084A799D28E541EA00846FB3 /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0807BB6428E84674004F0AF1 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		0807BB6728E84C49004F0AF1 /* MyStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStackViewController.swift; sourceTree = "<group>"; };
 		084A799628E541EA00846FB3 /* LearnConstraint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnConstraint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		084A799928E541EA00846FB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		084A799B28E541EA00846FB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,9 +57,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0807BB6628E84C2D004F0AF1 /* stack_view */ = {
+			isa = PBXGroup;
+			children = (
+				0807BB6728E84C49004F0AF1 /* MyStackViewController.swift */,
+			);
+			path = stack_view;
+			sourceTree = "<group>";
+		};
 		084A798D28E541EA00846FB3 = {
 			isa = PBXGroup;
 			children = (
+				0807BB6628E84C2D004F0AF1 /* stack_view */,
 				088FC52D28E6E54600CD141B /* table_view_and_collection_view */,
 				088FC52828E6DD7E00CD141B /* contraint_view */,
 				088FC52528E6A8C500CD141B /* collection_view */,
@@ -83,6 +96,7 @@
 				084A79A228E541ED00846FB3 /* Assets.xcassets */,
 				084A79A428E541ED00846FB3 /* LaunchScreen.storyboard */,
 				084A79A728E541ED00846FB3 /* Info.plist */,
+				0807BB6428E84674004F0AF1 /* Helper.swift */,
 			);
 			path = LearnConstraint;
 			sourceTree = "<group>";
@@ -200,11 +214,13 @@
 				088FC53128E6E9A800CD141B /* CustomUITableViewCell.swift in Sources */,
 				084A799E28E541EA00846FB3 /* ViewController.swift in Sources */,
 				088FC52C28E6DF3B00CD141B /* MyView.swift in Sources */,
+				0807BB6828E84C49004F0AF1 /* MyStackViewController.swift in Sources */,
 				088FC51B28E574EA00CD141B /* MyTableViewController.swift in Sources */,
 				088FC51528E5531600CD141B /* ConstraintViewController.swift in Sources */,
 				088FC52428E6A32200CD141B /* CollectionViewController.swift in Sources */,
 				084A799A28E541EA00846FB3 /* AppDelegate.swift in Sources */,
 				084A799C28E541EA00846FB3 /* SceneDelegate.swift in Sources */,
+				0807BB6528E84674004F0AF1 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
