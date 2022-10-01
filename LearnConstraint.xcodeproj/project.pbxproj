@@ -14,13 +14,13 @@
 		084A79A328E541ED00846FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 084A79A228E541ED00846FB3 /* Assets.xcassets */; };
 		084A79A628E541ED00846FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084A79A428E541ED00846FB3 /* LaunchScreen.storyboard */; };
 		088FC51528E5531600CD141B /* ConstraintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC51428E5531600CD141B /* ConstraintViewController.swift */; };
-		088FC51928E564CB00CD141B /* CollectionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088FC51828E564CB00CD141B /* CollectionStoryboard.storyboard */; };
 		088FC51B28E574EA00CD141B /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC51A28E574EA00CD141B /* MyTableViewController.swift */; };
-		088FC51D28E585CB00CD141B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC51C28E585CB00CD141B /* TableViewCell.swift */; };
-		088FC52028E586D300CD141B /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC51F28E586D300CD141B /* MyView.swift */; };
-		088FC52228E58EA600CD141B /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 088FC52128E58EA600CD141B /* TestStoryboard.storyboard */; };
 		088FC52428E6A32200CD141B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC52328E6A32200CD141B /* CollectionViewController.swift */; };
 		088FC52728E6A8F000CD141B /* CustomUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC52628E6A8F000CD141B /* CustomUICollectionViewCell.swift */; };
+		088FC52B28E6DF3B00CD141B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC52928E6DF3B00CD141B /* TableViewCell.swift */; };
+		088FC52C28E6DF3B00CD141B /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC52A28E6DF3B00CD141B /* MyView.swift */; };
+		088FC52F28E6E58300CD141B /* TableAndCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC52E28E6E58300CD141B /* TableAndCollectionViewController.swift */; };
+		088FC53128E6E9A800CD141B /* CustomUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC53028E6E9A800CD141B /* CustomUITableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,13 +33,13 @@
 		084A79A528E541ED00846FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		084A79A728E541ED00846FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		088FC51428E5531600CD141B /* ConstraintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintViewController.swift; sourceTree = "<group>"; };
-		088FC51828E564CB00CD141B /* CollectionStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectionStoryboard.storyboard; sourceTree = "<group>"; };
 		088FC51A28E574EA00CD141B /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
-		088FC51C28E585CB00CD141B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		088FC51F28E586D300CD141B /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
-		088FC52128E58EA600CD141B /* TestStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
 		088FC52328E6A32200CD141B /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		088FC52628E6A8F000CD141B /* CustomUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUICollectionViewCell.swift; sourceTree = "<group>"; };
+		088FC52928E6DF3B00CD141B /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		088FC52A28E6DF3B00CD141B /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		088FC52E28E6E58300CD141B /* TableAndCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAndCollectionViewController.swift; sourceTree = "<group>"; };
+		088FC53028E6E9A800CD141B /* CustomUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +56,10 @@
 		084A798D28E541EA00846FB3 = {
 			isa = PBXGroup;
 			children = (
+				088FC52D28E6E54600CD141B /* table_view_and_collection_view */,
+				088FC52828E6DD7E00CD141B /* contraint_view */,
 				088FC52528E6A8C500CD141B /* collection_view */,
-				088FC52128E58EA600CD141B /* TestStoryboard.storyboard */,
-				088FC51E28E586AE00CD141B /* Table */,
-				088FC51828E564CB00CD141B /* CollectionStoryboard.storyboard */,
-				088FC51328E552EE00CD141B /* Controller */,
+				088FC51328E552EE00CD141B /* table_view */,
 				084A799828E541EA00846FB3 /* LearnConstraint */,
 				084A799728E541EA00846FB3 /* Products */,
 			);
@@ -88,22 +87,14 @@
 			path = LearnConstraint;
 			sourceTree = "<group>";
 		};
-		088FC51328E552EE00CD141B /* Controller */ = {
+		088FC51328E552EE00CD141B /* table_view */ = {
 			isa = PBXGroup;
 			children = (
-				088FC51428E5531600CD141B /* ConstraintViewController.swift */,
+				088FC52A28E6DF3B00CD141B /* MyView.swift */,
+				088FC52928E6DF3B00CD141B /* TableViewCell.swift */,
 				088FC51A28E574EA00CD141B /* MyTableViewController.swift */,
 			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		088FC51E28E586AE00CD141B /* Table */ = {
-			isa = PBXGroup;
-			children = (
-				088FC51C28E585CB00CD141B /* TableViewCell.swift */,
-				088FC51F28E586D300CD141B /* MyView.swift */,
-			);
-			path = Table;
+			path = table_view;
 			sourceTree = "<group>";
 		};
 		088FC52528E6A8C500CD141B /* collection_view */ = {
@@ -113,6 +104,23 @@
 				088FC52628E6A8F000CD141B /* CustomUICollectionViewCell.swift */,
 			);
 			path = collection_view;
+			sourceTree = "<group>";
+		};
+		088FC52828E6DD7E00CD141B /* contraint_view */ = {
+			isa = PBXGroup;
+			children = (
+				088FC51428E5531600CD141B /* ConstraintViewController.swift */,
+			);
+			path = contraint_view;
+			sourceTree = "<group>";
+		};
+		088FC52D28E6E54600CD141B /* table_view_and_collection_view */ = {
+			isa = PBXGroup;
+			children = (
+				088FC52E28E6E58300CD141B /* TableAndCollectionViewController.swift */,
+				088FC53028E6E9A800CD141B /* CustomUITableViewCell.swift */,
+			);
+			path = table_view_and_collection_view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +184,6 @@
 				084A79A628E541ED00846FB3 /* LaunchScreen.storyboard in Resources */,
 				084A79A328E541ED00846FB3 /* Assets.xcassets in Resources */,
 				084A79A128E541EA00846FB3 /* Main.storyboard in Resources */,
-				088FC51928E564CB00CD141B /* CollectionStoryboard.storyboard in Resources */,
-				088FC52228E58EA600CD141B /* TestStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,13 +194,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				088FC52028E586D300CD141B /* MyView.swift in Sources */,
 				088FC52728E6A8F000CD141B /* CustomUICollectionViewCell.swift in Sources */,
+				088FC52F28E6E58300CD141B /* TableAndCollectionViewController.swift in Sources */,
+				088FC52B28E6DF3B00CD141B /* TableViewCell.swift in Sources */,
+				088FC53128E6E9A800CD141B /* CustomUITableViewCell.swift in Sources */,
 				084A799E28E541EA00846FB3 /* ViewController.swift in Sources */,
+				088FC52C28E6DF3B00CD141B /* MyView.swift in Sources */,
 				088FC51B28E574EA00CD141B /* MyTableViewController.swift in Sources */,
 				088FC51528E5531600CD141B /* ConstraintViewController.swift in Sources */,
 				088FC52428E6A32200CD141B /* CollectionViewController.swift in Sources */,
-				088FC51D28E585CB00CD141B /* TableViewCell.swift in Sources */,
 				084A799A28E541EA00846FB3 /* AppDelegate.swift in Sources */,
 				084A799C28E541EA00846FB3 /* SceneDelegate.swift in Sources */,
 			);

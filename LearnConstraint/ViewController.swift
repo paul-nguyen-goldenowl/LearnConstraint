@@ -49,6 +49,16 @@ class ViewController: UIViewController {
         return button
     }()
 
+    lazy var btnTableAndCollection : UIButton = {
+        let button = UIButton()
+        button.setTitle("Table with Collection", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.borderWidth = 1
+        button.layer.cornerRadius = 4
+        button.layer.borderColor = UIColor.black.cgColor
+        return button
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,11 +72,13 @@ class ViewController: UIViewController {
         scrollView.addSubview(btnConstraint)
         scrollView.addSubview(btnTable)
         scrollView.addSubview(btnCollection)
+        scrollView.addSubview(btnTableAndCollection)
         
         setConstraints()
         btnConstraint.addTarget(self, action: #selector(btnConstraint_clicked), for: .touchUpInside)
         btnTable.addTarget(self, action: #selector(btnTableLayout_clicked), for: .touchUpInside)
         btnCollection.addTarget(self, action: #selector(btnCollection_clicked), for: .touchUpInside)
+        btnTableAndCollection.addTarget(self, action: #selector(btnTableAndCollection_clicked), for: .touchUpInside)
     }
     
     private func setConstraints(){
@@ -89,8 +101,13 @@ class ViewController: UIViewController {
 
         constraints.append(btnCollection.heightAnchor.constraint(equalToConstant: 25))
         constraints.append(btnCollection.trailingAnchor.constraint(equalTo: btnTable.trailingAnchor))
-        constraints.append(btnCollection.leftAnchor.constraint(equalTo: btnTable.leftAnchor))
+        constraints.append(btnCollection.leadingAnchor.constraint(equalTo: btnTable.leadingAnchor))
         constraints.append(btnCollection.topAnchor.constraint(equalTo: btnTable.bottomAnchor, constant: 20))
+
+        constraints.append(btnTableAndCollection.heightAnchor.constraint(equalToConstant: 25))
+        constraints.append(btnTableAndCollection.trailingAnchor.constraint(equalTo: btnCollection.trailingAnchor))
+        constraints.append(btnTableAndCollection.leadingAnchor.constraint(equalTo: btnCollection.leadingAnchor))
+        constraints.append(btnTableAndCollection.topAnchor.constraint(equalTo: btnCollection.bottomAnchor, constant: 20))
 
         
         NSLayoutConstraint.activate(constraints)
@@ -113,6 +130,13 @@ class ViewController: UIViewController {
     @objc private func btnCollection_clicked(){
         print("nav to table page")
         let vc = CollectionViewController()
+        let nav = UINavigationController(rootViewController: vc)
+        // nav.modalPresentationStyle = .fullScreen
+        present(nav, animated: true)
+    }
+    
+    @objc private func btnTableAndCollection_clicked(){
+        let vc = TableAndCollectionViewController()
         let nav = UINavigationController(rootViewController: vc)
         present(nav, animated: true)
     }
