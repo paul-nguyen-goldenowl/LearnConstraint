@@ -11,21 +11,6 @@ class TableAndCollectionViewController: UIViewController {
     
     private let tablePadding: CGFloat = 16
     
-    lazy var collectionView: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        layout.minimumInteritemSpacing = 8
-        layout.itemSize = CGSize(width: 30, height: 30)
-        
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.dataSource = self
-        collectionView.delegate = self
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "UICollectionViewCell")
-        collectionView.backgroundColor = .yellow
-        return collectionView
-    }()
-    
     lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -41,10 +26,7 @@ class TableAndCollectionViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
-        
-//        view.addSubview(collectionView)
-//        collectionView.frame = CGRect(x: 0, y: 50, width: view.frame.width, height: 40)
-
+ 
         view.addSubview(tableView)
         setLayout()
     }

@@ -8,3 +8,6 @@
 
 ## UICollectionView
 <img src="Docs/screenshots/collectionview.png" width="200"/>
+
+## Table view with collection cell
+<img src="Docs/screenshots/table_with_collection.png" width="200"/>
