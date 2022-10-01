@@ -18,13 +18,21 @@ class CollectionViewController: UIViewController {
         layout.scrollDirection = .vertical
         layout.minimumLineSpacing = rowPadding
         layout.minimumInteritemSpacing = rowPadding
-        let size = view.frame.width / 2 - rowPadding - collectionPadding
+        let size = view.frame.width / 2 - rowPadding - collectionPadding * 2
         layout.itemSize = CGSize(width: size, height: size)
         return layout
     }()
+         
     
     lazy var collectionView : UICollectionView = {
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        
+        view.register(CustomUICollectionViewCell.self, forCellWithReuseIdentifier: CustomUICollectionViewCell.identifier)
+        
+        view.dataSource = self
+        view.delegate = self
+        
+        view.setCollectionViewLayout(layout, animated: true)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -37,12 +45,7 @@ class CollectionViewController: UIViewController {
     
     private func setLayout(){
         view.addSubview(collectionView)
-            
-        collectionView.dataSource = self
-        collectionView.delegate = self
-
-        collectionView.register(CustomUICollectionViewCell.self, forCellWithReuseIdentifier: CustomUICollectionViewCell.identifier)
-
+        
         collectionView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: collectionPadding).isActive = true
