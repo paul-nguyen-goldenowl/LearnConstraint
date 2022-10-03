@@ -19,7 +19,7 @@ jobs:
         path: |
           ~/Library/Developer/Xcode/DerivedData/LearnConstraint-*/Build
           ~/Library/Developer/Xcode/DerivedData/LearnConstraint-*/SourcePackages
-        key: ${{ runner.os }}-derivedData-cache-${{ hashFiles('**/Podfile.lock') }}
+        key: ${{ runner.os }}-derivedData-cache-${{ hashFiles('.github/workflows/build-ios16.yml') }}
         restore-keys: |
           ${{ runner.os }}-derivedData-cache-
 
