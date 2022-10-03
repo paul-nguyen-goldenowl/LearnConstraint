@@ -33,6 +33,8 @@ class ViewController: UIViewController {
         data.append(Action(name: "CollectionView", destination: CollectionViewController.self))
         data.append(Action(name: "Table with collection", destination: TableAndCollectionViewController.self))
         data.append(Action(name: "Tab bar", destination: TabBarController.self))
+        data.append(Action(name: "Weak var", destination: WeakVarViewController.self))
+        data.append(Action(name: "Weak self", destination: WeakSelfViewController.self))
         
         view.addSubview(tableView)
         setConstraints()
