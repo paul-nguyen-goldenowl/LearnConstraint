@@ -26,6 +26,8 @@
 		0892056628EA7E6D00AAC219 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892056528EA7E6D00AAC219 /* TabBarController.swift */; };
 		0892056928EABC9D00AAC219 /* WeakVarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892056828EABC9D00AAC219 /* WeakVarViewController.swift */; };
 		0892056B28EAC2CA00AAC219 /* WeakSelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892056A28EAC2CA00AAC219 /* WeakSelfViewController.swift */; };
+		0892057228EAF35000AAC219 /* DispatchGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892057128EAF35000AAC219 /* DispatchGroupViewController.swift */; };
+		0892057428EAF3A200AAC219 /* DispatchMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892057328EAF3A200AAC219 /* DispatchMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		0892056528EA7E6D00AAC219 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		0892056828EABC9D00AAC219 /* WeakVarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarViewController.swift; sourceTree = "<group>"; };
 		0892056A28EAC2CA00AAC219 /* WeakSelfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakSelfViewController.swift; sourceTree = "<group>"; };
+		0892057128EAF35000AAC219 /* DispatchGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchGroupViewController.swift; sourceTree = "<group>"; };
+		0892057328EAF3A200AAC219 /* DispatchMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 		084A798D28E541EA00846FB3 = {
 			isa = PBXGroup;
 			children = (
+				0892056C28EAE11800AAC219 /* learn_GCD */,
 				0892056728EA998F00AAC219 /* weak_self */,
 				0892056428EA7E2100AAC219 /* tab_bar_controller */,
 				0807BB6628E84C2D004F0AF1 /* stack_view */,
@@ -162,6 +167,15 @@
 			path = weak_self;
 			sourceTree = "<group>";
 		};
+		0892056C28EAE11800AAC219 /* learn_GCD */ = {
+			isa = PBXGroup;
+			children = (
+				0892057328EAF3A200AAC219 /* DispatchMainViewController.swift */,
+				0892057128EAF35000AAC219 /* DispatchGroupViewController.swift */,
+			);
+			path = learn_GCD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,6 +251,7 @@
 				088FC52F28E6E58300CD141B /* TableAndCollectionViewController.swift in Sources */,
 				088FC52B28E6DF3B00CD141B /* TableViewCell.swift in Sources */,
 				088FC53128E6E9A800CD141B /* CustomUITableViewCell.swift in Sources */,
+				0892057228EAF35000AAC219 /* DispatchGroupViewController.swift in Sources */,
 				084A799E28E541EA00846FB3 /* ViewController.swift in Sources */,
 				088FC52C28E6DF3B00CD141B /* MyView.swift in Sources */,
 				0807BB6828E84C49004F0AF1 /* MyStackViewController.swift in Sources */,
@@ -249,6 +264,7 @@
 				0892056628EA7E6D00AAC219 /* TabBarController.swift in Sources */,
 				084A799C28E541EA00846FB3 /* SceneDelegate.swift in Sources */,
 				0807BB6528E84674004F0AF1 /* Helper.swift in Sources */,
+				0892057428EAF3A200AAC219 /* DispatchMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
