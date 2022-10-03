@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         data.append(Action(name: "Tab bar", destination: TabBarController.self))
         data.append(Action(name: "Weak var", destination: WeakVarViewController.self))
         data.append(Action(name: "Weak self", destination: WeakSelfViewController.self))
+        data.append(Action(name: "DispatchWorkItem", destination: WorkItemViewController.self))
         data.append(Action(name: "DispatchGroup", destination: DispatchGroupViewController.self))
         data.append(Action(name: "Update main thread", destination: DispatchMainViewController.self))
         
