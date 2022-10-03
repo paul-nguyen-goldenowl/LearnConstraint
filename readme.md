@@ -11,3 +11,6 @@
 
 ## Table view with collection cell
 <img src="Docs/screenshots/table_with_collection.png" width="200"/>
+
+## Tab bar controller
+<img src="Docs/screenshots/tabbar2.png" width="200"/>|<img src="Docs/screenshots/tabbar1.png" width="200"/>

@@ -23,6 +23,7 @@
 		088FC52C28E6DF3B00CD141B /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC52A28E6DF3B00CD141B /* MyView.swift */; };
 		088FC52F28E6E58300CD141B /* TableAndCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC52E28E6E58300CD141B /* TableAndCollectionViewController.swift */; };
 		088FC53128E6E9A800CD141B /* CustomUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC53028E6E9A800CD141B /* CustomUITableViewCell.swift */; };
+		0892056628EA7E6D00AAC219 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892056528EA7E6D00AAC219 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		088FC52A28E6DF3B00CD141B /* MyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		088FC52E28E6E58300CD141B /* TableAndCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAndCollectionViewController.swift; sourceTree = "<group>"; };
 		088FC53028E6E9A800CD141B /* CustomUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITableViewCell.swift; sourceTree = "<group>"; };
+		0892056528EA7E6D00AAC219 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		084A798D28E541EA00846FB3 = {
 			isa = PBXGroup;
 			children = (
+				0892056428EA7E2100AAC219 /* tab_bar_controller */,
 				0807BB6628E84C2D004F0AF1 /* stack_view */,
 				088FC52D28E6E54600CD141B /* table_view_and_collection_view */,
 				088FC52828E6DD7E00CD141B /* contraint_view */,
@@ -135,6 +138,14 @@
 				088FC53028E6E9A800CD141B /* CustomUITableViewCell.swift */,
 			);
 			path = table_view_and_collection_view;
+			sourceTree = "<group>";
+		};
+		0892056428EA7E2100AAC219 /* tab_bar_controller */ = {
+			isa = PBXGroup;
+			children = (
+				0892056528EA7E6D00AAC219 /* TabBarController.swift */,
+			);
+			path = tab_bar_controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +230,7 @@
 				088FC51528E5531600CD141B /* ConstraintViewController.swift in Sources */,
 				088FC52428E6A32200CD141B /* CollectionViewController.swift in Sources */,
 				084A799A28E541EA00846FB3 /* AppDelegate.swift in Sources */,
+				0892056628EA7E6D00AAC219 /* TabBarController.swift in Sources */,
 				084A799C28E541EA00846FB3 /* SceneDelegate.swift in Sources */,
 				0807BB6528E84674004F0AF1 /* Helper.swift in Sources */,
 			);

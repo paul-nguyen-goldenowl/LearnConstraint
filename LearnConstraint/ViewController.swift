@@ -31,8 +31,9 @@ class ViewController: UIViewController {
         data.append(Action(name: "StackView", destination: MyStackViewController.self))
         data.append(Action(name: "TableView", destination: MyTableViewController.self))
         data.append(Action(name: "CollectionView", destination: CollectionViewController.self))
-        data.append(Action(name: "Table with collection", destination: TableAndCollectionViewController.self))   
-       
+        data.append(Action(name: "Table with collection", destination: TableAndCollectionViewController.self))
+        data.append(Action(name: "Tab bar", destination: TabBarController.self))
+        
         view.addSubview(tableView)
         setConstraints()
     }
