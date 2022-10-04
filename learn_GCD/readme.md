@@ -1,3 +1,17 @@
+## Queue
+
+- `Main Queue` 
+    + Thực thi trên main thread
+    + Là 1 serial queue
+
+- `Global Queue`
+    + Là concurrent queue
+    + Chia sẻ trên toàn bộ hệ thống
+    + Có 4 mức độ ưu tiên: high, default, low, background
+
+- `Custom Queue`
+    + Có thể tạo ra là 1 serial hay concurrent queue
+
 ## Usages
 
 - `Main Queue` : Là sự lựa chọn phổ biến cho việc update UI sau khi hoàn thành task. Mọi thứ với main thì phải là bất động bộ (async)
@@ -36,6 +50,16 @@ class ViewController: UIViewController {
     func compressImage() -> UIImage? {
         return nil
     }
+}
+```
+
+## Delay task
+```swift
+let queue = DispatchQueue(label: "myqueue", qos: .userInitiated)
+print(Date())
+let additionalTime: DispatchTimeInterval = .seconds(2)
+queue.asyncAfter(deadline: .now() + additionalTime) {
+    print(Date())
 }
 ```
 
@@ -88,4 +112,6 @@ DispatchQueue.global(qos: .userInitiated).async {
 
 ## Links
 
-[GCD](https://fxstudio.dev/grand-central-dispatch-managing-task/)
+[https://fxstudio.dev/grand-central-dispatch-managing-task/](https://fxstudio.dev/grand-central-dispatch-managing-task/)
+
+[https://gist.github.com/tclementdev/6af616354912b0347cdf6db159c37057](https://gist.github.com/tclementdev/6af616354912b0347cdf6db159c37057)
