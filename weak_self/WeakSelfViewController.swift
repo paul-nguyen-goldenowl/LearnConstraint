@@ -8,20 +8,38 @@
 import UIKit
 
 class WeakSelfViewController: UIViewController {
-    
+    var alert: UIAlertController?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        
-        let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: .alert)
+
+        // if alert declared here, it not leak
+        // let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: .alert)
+
+        alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: .alert)
+
+        guard let alert = alert else { return }
+
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { [weak self] _ in
-            guard let strongSelf = self else {return}
+            guard let strongSelf = self else { return }
             strongSelf.doSomething()
         }))
+
+        /* this not leak */
+        // alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { _ in
+        //     print("hello")
+        // }))
+
+        /* this leak!!! */
+        // alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: { _ in
+        //     self.doSomething()
+        // }))
+
         present(alert, animated: true)
     }
-    
-    private func doSomething(){
+
+    private func doSomething() {
         print("do something")
     }
 }

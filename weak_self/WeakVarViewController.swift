@@ -8,7 +8,7 @@
 import UIKit
 
 class LView: UIView {
-    let vc: UIViewController
+    weak var vc: UIViewController?
     init(vc: UIViewController){
         self.vc = vc
         super.init(frame: .zero)
@@ -44,7 +44,7 @@ class WeakVarViewController: UIViewController {
 }
 
 class LViewController : UIViewController {
-    weak var lView : LView?
+    var lView : LView?
     override func viewDidLoad() {
         super.viewDidLoad()
         lView = LView(vc: self)
