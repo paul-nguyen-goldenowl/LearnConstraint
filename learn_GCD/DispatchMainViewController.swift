@@ -27,14 +27,14 @@ class DispatchMainViewController: UIViewController {
     }
     
     private  func fetchImage(urlString: String) {
-        let url = URL(string: urlString)
+        guard let url = URL(string: urlString) else { return }
         
-        (URLSession(configuration: .default).dataTask(with: url!, completionHandler: { (data, response, error) in
+        (URLSession(configuration: .default).dataTask(with: url, completionHandler: { [weak self] (data, response, error) in
             if let data = data {
                 let image = UIImage(data: data)
                 
                 DispatchQueue.main.async {
-                    self.imageView.image = image
+                    self?.imageView.image = image
                 }
             }
         })).resume()
