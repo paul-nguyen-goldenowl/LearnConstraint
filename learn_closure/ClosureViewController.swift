@@ -25,7 +25,7 @@ class ClosureViewController: UIViewController {
     func handleClosure() {
         myCalculator2 = MyCalculator2()
         guard let myCalculator2 = myCalculator2 else { return }
-        
+
 //        myCalculator2.add(first: { [weak self] () -> Int in
 //            guard let self = self else { return 0 }
 //            return self.first
@@ -43,11 +43,21 @@ class ClosureViewController: UIViewController {
         }
     }
 
+    lazy var closureView: ClosureView = {
+        let closureView = ClosureView()
+        closureView.backgroundColor = .blue
+        closureView.tapHandler = {
+            print("Tapped")
+        }
+        return closureView
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         handleDelegate()
         handleClosure()
+        view.addSubview(closureView)
     }
 }
 
