@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         data.append(Action(name: "Update main thread", destination: DispatchMainViewController.self))
         data.append(Action(name: "Closure", destination: ClosureViewController.self))
         data.append(Action(name: "Escaping Closure", destination: EscapingClosureViewController.self))
+        data.append(Action(name: "GCD usecase", destination: GCDViewController.self))
         
         view.addSubview(tableView)
         setConstraints()

@@ -34,6 +34,7 @@
 		08D92A4128EBF4AD009328AA /* ClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D92A4028EBF4AD009328AA /* ClosureViewController.swift */; };
 		08D92A4328EBF4DA009328AA /* Caculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D92A4228EBF4DA009328AA /* Caculator.swift */; };
 		08D92A4528EBF94A009328AA /* Caculator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D92A4428EBF94A009328AA /* Caculator2.swift */; };
+		08A7DBB428ED394300452243 /* GCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7DBB328ED394300452243 /* GCDViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		08D92A4028EBF4AD009328AA /* ClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureViewController.swift; sourceTree = "<group>"; };
 		08D92A4228EBF4DA009328AA /* Caculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caculator.swift; sourceTree = "<group>"; };
 		08D92A4428EBF94A009328AA /* Caculator2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caculator2.swift; sourceTree = "<group>"; };
+		08A7DBB328ED394300452243 /* GCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 				0892057328EAF3A200AAC219 /* DispatchMainViewController.swift */,
 				0892057128EAF35000AAC219 /* DispatchGroupViewController.swift */,
 				0892057528EAF88800AAC219 /* WorkItemViewController.swift */,
+				08A7DBB328ED394300452243 /* GCDViewController.swift */,
 			);
 			path = learn_GCD;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				0892057628EAF88800AAC219 /* WorkItemViewController.swift in Sources */,
 				0892056B28EAC2CA00AAC219 /* WeakSelfViewController.swift in Sources */,
 				08D92A4328EBF4DA009328AA /* Caculator.swift in Sources */,
+				08A7DBB428ED394300452243 /* GCDViewController.swift in Sources */,
 				088FC51B28E574EA00CD141B /* MyTableViewController.swift in Sources */,
 				088FC51528E5531600CD141B /* ConstraintViewController.swift in Sources */,
 				088FC52428E6A32200CD141B /* CollectionViewController.swift in Sources */,
