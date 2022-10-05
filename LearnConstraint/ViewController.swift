@@ -38,6 +38,7 @@ class ViewController: UIViewController {
         data.append(Action(name: "DispatchWorkItem", destination: WorkItemViewController.self))
         data.append(Action(name: "DispatchGroup", destination: DispatchGroupViewController.self))
         data.append(Action(name: "Update main thread", destination: DispatchMainViewController.self))
+        data.append(Action(name: "GCD usecase", destination: GCDViewController.self))
         
         view.addSubview(tableView)
         setConstraints()

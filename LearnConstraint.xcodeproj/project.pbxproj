@@ -29,6 +29,7 @@
 		0892057228EAF35000AAC219 /* DispatchGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892057128EAF35000AAC219 /* DispatchGroupViewController.swift */; };
 		0892057428EAF3A200AAC219 /* DispatchMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892057328EAF3A200AAC219 /* DispatchMainViewController.swift */; };
 		0892057628EAF88800AAC219 /* WorkItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892057528EAF88800AAC219 /* WorkItemViewController.swift */; };
+		08A7DBB428ED394300452243 /* GCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7DBB328ED394300452243 /* GCDViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		0892057128EAF35000AAC219 /* DispatchGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchGroupViewController.swift; sourceTree = "<group>"; };
 		0892057328EAF3A200AAC219 /* DispatchMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchMainViewController.swift; sourceTree = "<group>"; };
 		0892057528EAF88800AAC219 /* WorkItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkItemViewController.swift; sourceTree = "<group>"; };
+		08A7DBB328ED394300452243 /* GCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				0892057328EAF3A200AAC219 /* DispatchMainViewController.swift */,
 				0892057128EAF35000AAC219 /* DispatchGroupViewController.swift */,
 				0892057528EAF88800AAC219 /* WorkItemViewController.swift */,
+				08A7DBB328ED394300452243 /* GCDViewController.swift */,
 			);
 			path = learn_GCD;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				0892056928EABC9D00AAC219 /* WeakVarViewController.swift in Sources */,
 				0892057628EAF88800AAC219 /* WorkItemViewController.swift in Sources */,
 				0892056B28EAC2CA00AAC219 /* WeakSelfViewController.swift in Sources */,
+				08A7DBB428ED394300452243 /* GCDViewController.swift in Sources */,
 				088FC51B28E574EA00CD141B /* MyTableViewController.swift in Sources */,
 				088FC51528E5531600CD141B /* ConstraintViewController.swift in Sources */,
 				088FC52428E6A32200CD141B /* CollectionViewController.swift in Sources */,
