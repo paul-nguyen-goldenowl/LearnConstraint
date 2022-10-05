@@ -31,10 +31,11 @@
 		0892057428EAF3A200AAC219 /* DispatchMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892057328EAF3A200AAC219 /* DispatchMainViewController.swift */; };
 		0892057628EAF88800AAC219 /* WorkItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0892057528EAF88800AAC219 /* WorkItemViewController.swift */; };
 		08A7DBB228ED2C0500452243 /* ClosureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7DBB128ED2C0500452243 /* ClosureView.swift */; };
+		08A7DBB428ED394300452243 /* GCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7DBB328ED394300452243 /* GCDViewController.swift */; };
+		08A7DBB728ED8AC100452243 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7DBB628ED8AC100452243 /* NetworkViewController.swift */; };
 		08D92A4128EBF4AD009328AA /* ClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D92A4028EBF4AD009328AA /* ClosureViewController.swift */; };
 		08D92A4328EBF4DA009328AA /* Caculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D92A4228EBF4DA009328AA /* Caculator.swift */; };
 		08D92A4528EBF94A009328AA /* Caculator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D92A4428EBF94A009328AA /* Caculator2.swift */; };
-		08A7DBB428ED394300452243 /* GCDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7DBB328ED394300452243 /* GCDViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,10 +65,11 @@
 		0892057328EAF3A200AAC219 /* DispatchMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchMainViewController.swift; sourceTree = "<group>"; };
 		0892057528EAF88800AAC219 /* WorkItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkItemViewController.swift; sourceTree = "<group>"; };
 		08A7DBB128ED2C0500452243 /* ClosureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureView.swift; sourceTree = "<group>"; };
+		08A7DBB328ED394300452243 /* GCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewController.swift; sourceTree = "<group>"; };
+		08A7DBB628ED8AC100452243 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
 		08D92A4028EBF4AD009328AA /* ClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureViewController.swift; sourceTree = "<group>"; };
 		08D92A4228EBF4DA009328AA /* Caculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caculator.swift; sourceTree = "<group>"; };
 		08D92A4428EBF94A009328AA /* Caculator2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caculator2.swift; sourceTree = "<group>"; };
-		08A7DBB328ED394300452243 /* GCDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		084A798D28E541EA00846FB3 = {
 			isa = PBXGroup;
 			children = (
+				08A7DBB528ED8A1100452243 /* networking */,
 				08D92A3F28EBF480009328AA /* learn_closure */,
 				0892056C28EAE11800AAC219 /* learn_GCD */,
 				0892056728EA998F00AAC219 /* weak_self */,
@@ -191,6 +194,14 @@
 				08A7DBB328ED394300452243 /* GCDViewController.swift */,
 			);
 			path = learn_GCD;
+			sourceTree = "<group>";
+		};
+		08A7DBB528ED8A1100452243 /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				08A7DBB628ED8AC100452243 /* NetworkViewController.swift */,
+			);
+			path = networking;
 			sourceTree = "<group>";
 		};
 		08D92A3F28EBF480009328AA /* learn_closure */ = {
@@ -299,6 +310,7 @@
 				084A799A28E541EA00846FB3 /* AppDelegate.swift in Sources */,
 				0892056628EA7E6D00AAC219 /* TabBarController.swift in Sources */,
 				084A799C28E541EA00846FB3 /* SceneDelegate.swift in Sources */,
+				08A7DBB728ED8AC100452243 /* NetworkViewController.swift in Sources */,
 				0807BB6528E84674004F0AF1 /* Helper.swift in Sources */,
 				0892057428EAF3A200AAC219 /* DispatchMainViewController.swift in Sources */,
 			);
