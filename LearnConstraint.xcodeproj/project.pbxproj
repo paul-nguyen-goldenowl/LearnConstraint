@@ -16,6 +16,12 @@
 		084A79A128E541EA00846FB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084A799F28E541EA00846FB3 /* Main.storyboard */; };
 		084A79A328E541ED00846FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 084A79A228E541ED00846FB3 /* Assets.xcassets */; };
 		084A79A628E541ED00846FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084A79A428E541ED00846FB3 /* LaunchScreen.storyboard */; };
+		085FA0AC28EE617400676F7E /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085FA0AB28EE617400676F7E /* MVVMViewController.swift */; };
+		085FA0AE28EE623000676F7E /* EmployeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085FA0AD28EE623000676F7E /* EmployeesViewModel.swift */; };
+		085FA0B028EE62BB00676F7E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085FA0AF28EE62BB00676F7E /* APIService.swift */; };
+		085FA0B228EE630500676F7E /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085FA0B128EE630500676F7E /* Employee.swift */; };
+		085FA0B528EE656000676F7E /* EmployeeTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085FA0B428EE656000676F7E /* EmployeeTableViewDataSource.swift */; };
+		085FA0B828EE65D100676F7E /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085FA0B728EE65D100676F7E /* EmployeeTableViewCell.swift */; };
 		088FC51528E5531600CD141B /* ConstraintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC51428E5531600CD141B /* ConstraintViewController.swift */; };
 		088FC51B28E574EA00CD141B /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC51A28E574EA00CD141B /* MyTableViewController.swift */; };
 		088FC52428E6A32200CD141B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088FC52328E6A32200CD141B /* CollectionViewController.swift */; };
@@ -36,6 +42,10 @@
 		08D92A4128EBF4AD009328AA /* ClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D92A4028EBF4AD009328AA /* ClosureViewController.swift */; };
 		08D92A4328EBF4DA009328AA /* Caculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D92A4228EBF4DA009328AA /* Caculator.swift */; };
 		08D92A4528EBF94A009328AA /* Caculator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D92A4428EBF94A009328AA /* Caculator2.swift */; };
+		08ECE2E128EDF577008FE6BB /* AlamofireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ECE2E028EDF577008FE6BB /* AlamofireViewController.swift */; };
+		08ECE2E428EDF5B5008FE6BB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 08ECE2E328EDF5B5008FE6BB /* Alamofire */; };
+		08ECE2E828EE010A008FE6BB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ECE2E728EE010A008FE6BB /* NetworkManager.swift */; };
+		08ECE2EA28EE01DA008FE6BB /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08ECE2E928EE01DA008FE6BB /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +60,12 @@
 		084A79A228E541ED00846FB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		084A79A528E541ED00846FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		084A79A728E541ED00846FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		085FA0AB28EE617400676F7E /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
+		085FA0AD28EE623000676F7E /* EmployeesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewModel.swift; sourceTree = "<group>"; };
+		085FA0AF28EE62BB00676F7E /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		085FA0B128EE630500676F7E /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		085FA0B428EE656000676F7E /* EmployeeTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewDataSource.swift; sourceTree = "<group>"; };
+		085FA0B728EE65D100676F7E /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
 		088FC51428E5531600CD141B /* ConstraintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintViewController.swift; sourceTree = "<group>"; };
 		088FC51A28E574EA00CD141B /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		088FC52328E6A32200CD141B /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +86,9 @@
 		08D92A4028EBF4AD009328AA /* ClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureViewController.swift; sourceTree = "<group>"; };
 		08D92A4228EBF4DA009328AA /* Caculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caculator.swift; sourceTree = "<group>"; };
 		08D92A4428EBF94A009328AA /* Caculator2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Caculator2.swift; sourceTree = "<group>"; };
+		08ECE2E028EDF577008FE6BB /* AlamofireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireViewController.swift; sourceTree = "<group>"; };
+		08ECE2E728EE010A008FE6BB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		08ECE2E928EE01DA008FE6BB /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08ECE2E428EDF5B5008FE6BB /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +150,67 @@
 				0807BB6428E84674004F0AF1 /* Helper.swift */,
 			);
 			path = LearnConstraint;
+			sourceTree = "<group>";
+		};
+		085FA0A628EE60E900676F7E /* mvvm */ = {
+			isa = PBXGroup;
+			children = (
+				085FA0B628EE65A800676F7E /* Cells */,
+				085FA0B328EE653300676F7E /* DataSources */,
+				085FA0AA28EE611F00676F7E /* WebServics */,
+				085FA0A928EE610900676F7E /* ViewModels */,
+				085FA0A828EE610300676F7E /* Models */,
+				085FA0A728EE60EE00676F7E /* Controllers */,
+			);
+			path = mvvm;
+			sourceTree = "<group>";
+		};
+		085FA0A728EE60EE00676F7E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				085FA0AB28EE617400676F7E /* MVVMViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		085FA0A828EE610300676F7E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				085FA0B128EE630500676F7E /* Employee.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		085FA0A928EE610900676F7E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				085FA0AD28EE623000676F7E /* EmployeesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		085FA0AA28EE611F00676F7E /* WebServics */ = {
+			isa = PBXGroup;
+			children = (
+				085FA0AF28EE62BB00676F7E /* APIService.swift */,
+			);
+			path = WebServics;
+			sourceTree = "<group>";
+		};
+		085FA0B328EE653300676F7E /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				085FA0B428EE656000676F7E /* EmployeeTableViewDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		085FA0B628EE65A800676F7E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				085FA0B728EE65D100676F7E /* EmployeeTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		088FC51328E552EE00CD141B /* table_view */ = {
@@ -199,7 +280,11 @@
 		08A7DBB528ED8A1100452243 /* networking */ = {
 			isa = PBXGroup;
 			children = (
+				085FA0A628EE60E900676F7E /* mvvm */,
 				08A7DBB628ED8AC100452243 /* NetworkViewController.swift */,
+				08ECE2E028EDF577008FE6BB /* AlamofireViewController.swift */,
+				08ECE2E728EE010A008FE6BB /* NetworkManager.swift */,
+				08ECE2E928EE01DA008FE6BB /* NetworkError.swift */,
 			);
 			path = networking;
 			sourceTree = "<group>";
@@ -232,6 +317,9 @@
 			dependencies = (
 			);
 			name = LearnConstraint;
+			packageProductDependencies = (
+				08ECE2E328EDF5B5008FE6BB /* Alamofire */,
+			);
 			productName = LearnConstraint;
 			productReference = 084A799628E541EA00846FB3 /* LearnConstraint.app */;
 			productType = "com.apple.product-type.application";
@@ -260,6 +348,9 @@
 				Base,
 			);
 			mainGroup = 084A798D28E541EA00846FB3;
+			packageReferences = (
+				08ECE2E228EDF5B5008FE6BB /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 084A799728E541EA00846FB3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -288,28 +379,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				088FC52728E6A8F000CD141B /* CustomUICollectionViewCell.swift in Sources */,
+				08ECE2EA28EE01DA008FE6BB /* NetworkError.swift in Sources */,
 				08D92A4528EBF94A009328AA /* Caculator2.swift in Sources */,
 				088FC52F28E6E58300CD141B /* TableAndCollectionViewController.swift in Sources */,
 				080C8C0C28EC222200865D61 /* EscapingClosureViewController.swift in Sources */,
 				08D92A4128EBF4AD009328AA /* ClosureViewController.swift in Sources */,
 				088FC52B28E6DF3B00CD141B /* TableViewCell.swift in Sources */,
 				088FC53128E6E9A800CD141B /* CustomUITableViewCell.swift in Sources */,
+				085FA0B828EE65D100676F7E /* EmployeeTableViewCell.swift in Sources */,
+				085FA0B528EE656000676F7E /* EmployeeTableViewDataSource.swift in Sources */,
 				0892057228EAF35000AAC219 /* DispatchGroupViewController.swift in Sources */,
 				084A799E28E541EA00846FB3 /* ViewController.swift in Sources */,
 				088FC52C28E6DF3B00CD141B /* MyView.swift in Sources */,
 				0807BB6828E84C49004F0AF1 /* MyStackViewController.swift in Sources */,
 				0892056928EABC9D00AAC219 /* WeakVarViewController.swift in Sources */,
 				08A7DBB228ED2C0500452243 /* ClosureView.swift in Sources */,
+				08ECE2E128EDF577008FE6BB /* AlamofireViewController.swift in Sources */,
+				085FA0AE28EE623000676F7E /* EmployeesViewModel.swift in Sources */,
 				0892057628EAF88800AAC219 /* WorkItemViewController.swift in Sources */,
 				0892056B28EAC2CA00AAC219 /* WeakSelfViewController.swift in Sources */,
 				08D92A4328EBF4DA009328AA /* Caculator.swift in Sources */,
 				08A7DBB428ED394300452243 /* GCDViewController.swift in Sources */,
 				088FC51B28E574EA00CD141B /* MyTableViewController.swift in Sources */,
 				088FC51528E5531600CD141B /* ConstraintViewController.swift in Sources */,
+				085FA0B028EE62BB00676F7E /* APIService.swift in Sources */,
 				088FC52428E6A32200CD141B /* CollectionViewController.swift in Sources */,
 				084A799A28E541EA00846FB3 /* AppDelegate.swift in Sources */,
+				085FA0B228EE630500676F7E /* Employee.swift in Sources */,
 				0892056628EA7E6D00AAC219 /* TabBarController.swift in Sources */,
 				084A799C28E541EA00846FB3 /* SceneDelegate.swift in Sources */,
+				08ECE2E828EE010A008FE6BB /* NetworkManager.swift in Sources */,
+				085FA0AC28EE617400676F7E /* MVVMViewController.swift in Sources */,
 				08A7DBB728ED8AC100452243 /* NetworkViewController.swift in Sources */,
 				0807BB6528E84674004F0AF1 /* Helper.swift in Sources */,
 				0892057428EAF3A200AAC219 /* DispatchMainViewController.swift in Sources */,
@@ -528,6 +628,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		08ECE2E228EDF5B5008FE6BB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		08ECE2E328EDF5B5008FE6BB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08ECE2E228EDF5B5008FE6BB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 084A798E28E541EA00846FB3 /* Project object */;
 }
