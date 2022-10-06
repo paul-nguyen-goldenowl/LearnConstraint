@@ -41,6 +41,9 @@ class ViewController: UIViewController {
         data.append(Action(name: "Closure", destination: ClosureViewController.self))
         data.append(Action(name: "Escaping Closure", destination: EscapingClosureViewController.self))
         data.append(Action(name: "GCD usecase", destination: GCDViewController.self))
+        data.append(Action(name: "Networking", destination: NetworkViewController.self))
+        data.append(Action(name: "Alamofire", destination: AlamofireViewController.self))
+        data.append(Action(name: "MVVM", destination: MVVMViewController.self))
         
         view.addSubview(tableView)
         setConstraints()
