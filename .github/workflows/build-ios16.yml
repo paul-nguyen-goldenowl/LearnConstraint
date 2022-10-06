@@ -19,7 +19,7 @@ jobs:
         path: |
           ~/Library/Developer/Xcode/DerivedData/LearnConstraint-*/Build
           ~/Library/Developer/Xcode/DerivedData/LearnConstraint-*/SourcePackages
-        key: ${{ runner.os }}-derivedData-cache-${{ hashFiles('.github/workflows/build-ios16.yml') }}
+        key: ${{ runner.os }}-derivedData-cache-${{ hashFiles('LearnConstraint.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved') }}
         restore-keys: |
           ${{ runner.os }}-derivedData-cache-
 
